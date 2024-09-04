@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color RGB con Bootstrap</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Google Fonts para una tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Enlace a nuestro CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Selecciona un Color RGB</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-sm p-4">
+                    <!-- Color Picker -->
+                    <div class="form-group">
+                        <label for="colorPicker" class="font-weight-bold">Elige un color:</label>
+                        <input type="color" class="form-control" id="colorPicker" value="#000000">
+                    </div>
+                    <!-- Control para el color Rojo -->
+                    <div class="form-group">
+                        <label for="redRange" class="font-weight-bold">Rojo</label>
+                        <input type="range" class="form-control-range" id="redRange" min="0" max="255" value="0">
+                        <input type="number" class="form-control color-input" id="redInput" min="0" max="255" value="0">
+                    </div>
+                    <!-- Control para el color Verde -->
+                    <div class="form-group">
+                        <label for="greenRange" class="font-weight-bold">Verde</label>
+                        <input type="range" class="form-control-range" id="greenRange" min="0" max="255" value="0">
+                        <input type="number" class="form-control color-input" id="greenInput" min="0" max="255" value="0">
+                    </div>
+                    <!-- Control para el color Azul -->
+                    <div class="form-group">
+                        <label for="blueRange" class="font-weight-bold">Azul</label>
+                        <input type="range" class="form-control-range" id="blueRange" min="0" max="255" value="0">
+                        <input type="number" class="form-control color-input" id="blueInput" min="0" max="255" value="0">
+                    </div>
+                    <!-- Cuadro de color -->
+                    <div class="color-box mt-4" id="colorBox"></div>
+                    <!-- Código hexadecimal -->
+                    <p class="text-center mt-3 font-weight-bold">Código Hexadecimal: <span id="hexCode">#000000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Enlace a nuestro JS -->
+    <script src="script.js"></script>
+</body>
+</html>

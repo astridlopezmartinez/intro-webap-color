@@ -1,0 +1,46 @@
+/* Estilo global */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para la tarjeta contenedora */
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+/* Estilos para los inputs de texto */
+.color-input {
+    width: 70px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Estilos para el cuadro de color */
+.color-box {
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos y etiquetas */
+h1 {
+    color: #333;
+    font-weight: 700;
+}
+
+label {
+    color: #555;
+    font-weight: 500;
+}
+
+/* Margen y alineación para el código hexadecimal */
+#hexCode {
+    font-size: 1.2rem;
+    color: #333;
+}
